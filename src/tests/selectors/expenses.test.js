@@ -30,7 +30,7 @@ test('should filter by end date', () => {
         text: '',
         sortBy: 'date',
         startDate: undefined,
-        endDate: moment().subtract(4, 'days')
+        endDate: moment(0).add(2, 'days')
     };
     const result = expenses(expensesFixture, filters);
     expect(result).toEqual([ expensesFixture[0], expensesFixture[1] ]);
